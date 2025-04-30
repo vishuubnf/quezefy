@@ -1,0 +1,853 @@
+{
+	"history": [
+		{
+			"question": "In what year did the Berlin Wall fall?",
+			"options": ["1989", "1991", "1987", "1993"],
+			"answer": "1989"
+		},
+		{
+			"question": "The first Roman emperor to become a Christian was:",
+			"options": ["Constantine", "Augustus", "Julius Caesar", "Nero"],
+			"answer": "Constantine"
+		},
+		{
+			"question": "According to ancient legends, who founded Rome?",
+			"options": [
+				"Romulus and Remus",
+				"Julius Caesar",
+				"Augustus",
+				"Marcus Aurelius"
+			],
+			"answer": "Romulus and Remus"
+		},
+		{
+			"question": "Which civilization was responsible for the construction of Machu Picchu?",
+			"options": ["Aztecs", "Mayans", "Incas", "Inuit"],
+			"answer": "Incas"
+		},
+		{
+			"question": "Who was the first woman to win a Nobel Prize?",
+			"options": [
+				"Marie Curie",
+				"Mother Teresa",
+				"Margaret Thatcher",
+				"Indira Gandhi"
+			],
+			"answer": "Marie Curie"
+		},
+		{
+			"question": "Which of these countries was not a part of the Soviet Union?",
+			"options": ["Ukraine", "Georgia", "Poland", "Belarus"],
+			"answer": "Poland"
+		},
+		{
+			"question": "By what other name is the Eastern Roman Empire known?",
+			"options": [
+				"The Byzantine Empire",
+				"The Ottoman Empire",
+				"The Persian Empire",
+				"The Holy Roman Empire"
+			],
+			"answer": "The Byzantine Empire"
+		},
+		{
+			"question": "Which country was the first to send a satellite into space?",
+			"options": ["Russia", "USA", "China", "France"],
+			"answer": "Russia"
+		},
+		{
+			"question": "Who was the first explorer to circumnavigate the globe?",
+			"options": [
+				"Christopher Columbus",
+				"Vasco da Gama",
+				"Magellan",
+				"Francis Drake"
+			],
+			"answer": "Magellan"
+		},
+		{
+			"question": "What was the name of the document that established the United Nations?",
+			"options": [
+				"The Treaty of Versailles",
+				"The Geneva Convention",
+				"The Charter of the United Nations",
+				"The Magna Carta"
+			],
+			"answer": "The Charter of the United Nations"
+		},
+		{
+			"question": "What is the name of the goddess of victory in Greek mythology?",
+			"options": ["Nike", "Puma", "Adidas", "Aphrodite"],
+			"answer": "Nike"
+		},
+		{
+			"question": "How many operas did Beethoven compose?",
+			"options": ["1", "26", "165", "7"],
+			"answer": "1"
+		},
+		{
+			"question": "What philosopher said \"I think, therefore I am\"?",
+			"options": ["Descartes", "Plato", "Aristotle", "Socrates"],
+			"answer": "Descartes"
+		},
+		{
+			"question": "Which of these is not one of the Seven Wonders of the Ancient World?",
+			"options": [
+				"The Great Library of Alexandria",
+				"Colossus of Rhodes",
+				"Lighthouse of Alexandria",
+				"Temple of Artemis"
+			],
+			"answer": "The Great Library of Alexandria"
+		},
+		{
+			"question": "Which of these is not a Greek god or goddess?",
+			"options": ["Aphrodite", "Hera", "Athena", "Loki"],
+			"answer": "Loki"
+		}
+	],
+	"entertainment": [
+		{
+			"question": "What is the name of the clown in the movie \"It\"?",
+			"options": ["Pennywise", "Bozo", "Krusty", "Joker"],
+			"answer": "Pennywise"
+		},
+		{
+			"question": "What is the name of the fictional continent where the events of the TV series \"Game of Thrones\" take place?",
+			"options": ["Westeros", "Essos", "Sothoryos", "Ulthos"],
+			"answer": "Westeros"
+		},
+		{
+			"question": "Who played the role of Batman in the 2008 movie \"The Dark Knight\"?",
+			"options": [
+				"Christian Bale",
+				"Ben Affleck",
+				"George Clooney",
+				"Val Kilmer"
+			],
+			"answer": "Christian Bale"
+		},
+		{
+			"question": "What is the name of the fairy in the Disney movie \"Peter Pan\"?",
+			"options": ["Tinker Bell", "Wendy", "Vidia", "Navi"],
+			"answer": "Tinker Bell"
+		},
+		{
+			"question": "What is the name of the tiger that appears in the movie \"Life of Pi\"?",
+			"options": ["Richard Parker", "Tony", "Shere Khan", "Pi Patel"],
+			"answer": "Richard Parker"
+		},
+		{
+			"question": "Who wrote the novel \"One Hundred Years of Solitude\"?",
+			"options": [
+				"Gabriel García Márquez",
+				"Jorge Luis Borges",
+				"Isabel Allende",
+				"Octavio Paz"
+			],
+			"answer": "Gabriel García Márquez"
+		},
+		{
+			"question": "Which of these is not a race or species in the video game \"World of Warcraft\"?",
+			"options": ["Kokiri", "Undead", "Huargen", "Troll"],
+			"answer": "Kokiri"
+		},
+		{
+			"question": "How does Alice wane for the first time in the Disney movie \"Alice in Wonderland\"?",
+			"options": [
+				"She drinks a potion",
+				"She eats a cake",
+				"She falls down a hole",
+				"She walks through a mirror"
+			],
+			"answer": "She drinks a potion"
+		},
+		{
+			"question": "Who is the owner of Garfield in the comic strip \"Garfield\"?",
+			"options": ["Jon Arbuckle", "Odie", "Nermal", "Liz Wilson"],
+			"answer": "Jon Arbuckle"
+		},
+		{
+			"question": "In which of these animes does the main character carry his sister in a box?",
+			"options": [
+				"Kimetsu no Yaiba",
+				"Elfen Lied",
+				"Code Geass",
+				"Made in Abyss"
+			],
+			"answer": "Kimetsu no Yaiba"
+		},
+		{
+			"question": "Where is the weak point of the titans in the anime \"Attack on Titan\"?",
+			"options": ["Nape", "Head", "Heart", "Back"],
+			"answer": "Nape"
+		},
+		{
+			"question": "How many puppies does Perdita give birth to in the Disney movie \"101 Dalmatians\"?",
+			"options": ["15", "101", "99", "8"],
+			"answer": "15"
+		},
+		{
+			"question": "How many dragon balls are there in the anime \"Dragon Ball\"?",
+			"options": ["7", "8", "6", "12"],
+			"answer": "7"
+		},
+		{
+			"question": "In which of these movies are there aliens?",
+			"options": [
+				"The Great Wall",
+				"Big Heroes 6",
+				"Duplicity",
+				"Braveheart"
+			],
+			"answer": "The Great Wall"
+		},
+		{
+			"question": "What is the name of Misa Amane's shinigami in the anime \"Death Note\"?",
+			"options": ["Rem", "Ryuk", "Sidoh", "Gelus"],
+			"answer": "Rem"
+		}
+	],
+	"geography": [
+		{
+			"question": "What is the capital city of Australia?",
+			"options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+			"answer": "Canberra"
+		},
+		{
+			"question": "How many stars appear on the flag of the People's Republic of China?",
+			"options": ["4", "5", "6", "3"],
+			"answer": "5"
+		},
+		{
+			"question": "What continent is Saudi Arabia on?",
+			"options": ["Asia", "Africa", "Europe", "South America"],
+			"answer": "Asia"
+		},
+		{
+			"question": "What is the name of the official language in China?",
+			"options": ["Mandarin", "Cantonese", "Hokkien", "Hakka"],
+			"answer": "Mandarin"
+		},
+		{
+			"question": "Which of these European countries is further west?",
+			"options": ["Spain", "Italy", "Greece", "Germany"],
+			"answer": "Spain"
+		},
+		{
+			"question": "How many oceans are there on Earth?",
+			"options": ["5", "6", "7", "8"],
+			"answer": "5"
+		},
+		{
+			"question": "What is the capital of Colombia?",
+			"options": ["Bogotá", "Medellín", "Cali", "Barranquilla"],
+			"answer": "Bogotá"
+		},
+		{
+			"question": "Which country is the smallest in the world",
+			"options": ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
+			"answer": "Vatican City"
+		},
+		{
+			"question": "What is the largest country in Africa by land area?",
+			"options": ["Algeria", "Sudan", "Libya", "Congo"],
+			"answer": "Algeria"
+		},
+		{
+			"question": "What is the highest mountain in America?",
+			"options": [
+				"Mount Denali",
+				"Mount Logan",
+				"Mount Saint Elias",
+				"Pico de Orizaba"
+			],
+			"answer": "Mount Denali"
+		},
+		{
+			"question": "Which city is located both in Europe and Asia?",
+			"options": ["Istanbul", "Moscow", "Kiev", "Nicosia"],
+			"answer": "Istanbul"
+		},
+		{
+			"question": "What is the name of the world's largest reef system, located in Australia?",
+			"options": [
+				"Great Barrier Reef",
+				"Belize Barrier Reef",
+				"Mesoamerican Barrier Reef",
+				"Andros Barrier Reef"
+			],
+			"answer": "Great Barrier Reef"
+		},
+		{
+			"question": "Which river is the longest in the world?",
+			"options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+			"answer": "Amazon"
+		},
+		{
+			"question": "Which country is the largest by land area?",
+			"options": ["Russia", "Canada", "China", "United States"],
+			"answer": "Russia"
+		},
+		{
+			"question": "How many states are part of the United States?",
+			"options": ["50", "51", "48", "53"],
+			"answer": "50"
+		},
+		{
+			"question": "Which of these countries is not in Europe?",
+			"options": ["Georgia", "Moldova", "Armenia", "Azerbaijan"],
+			"answer": "Armenia"
+		},
+		{
+			"question": "What is the official currency of India?",
+			"options": ["Rupee", "Ruble", "Rial", "Real"],
+			"answer": "Rupee"
+		},
+		{
+			"question": "In which country is Mount Everest located?",
+			"options": ["Nepal", "China", "India", "Pakistan"],
+			"answer": "Nepal"
+		}
+	],
+	"science": [
+		{
+			"question": "What is the chemical symbol for gold?",
+			"options": ["Au", "Ag", "Cu", "Fe"],
+			"answer": "Au"
+		},
+		{
+			"question": "What is the triangle that has three equal sides called?",
+			"options": ["Equilateral", "Isosceles", "Scalene", "Right"],
+			"answer": "Equilateral"
+		},
+		{
+			"question": "What is an oviparous?",
+			"options": [
+				"An animal that lays eggs",
+				"An animal that gives birth",
+				"An animal that flies",
+				"An animal that lives in the water"
+			],
+			"answer": "An animal that lays eggs"
+		},
+		{
+			"question": "Cartography is the study of what?",
+			"options": ["Maps", "Cars", "Cats", "Carpets"],
+			"answer": "Maps"
+		},
+		{
+			"question": "If 50 is 100%, what is 90%?",
+			"options": ["45", "10", "100", "50"],
+			"answer": "45"
+		},
+		{
+			"question": "How many legs does a fly have?",
+			"options": ["6", "4", "8", "2"],
+			"answer": "6"
+		},
+		{
+			"question": "What is the smallest unit of matter?",
+			"options": ["Atom", "Molecule", "Cell", "Electron"],
+			"answer": "Atom"
+		},
+		{
+			"question": "What element do all acids contain?",
+			"options": ["Hydrogen", "Oxygen", "Helium", "Nitrogen"],
+			"answer": "Hydrogen"
+		},
+		{
+			"question": "What is the name of the process by which plants convert sunlight into energy?",
+			"options": [
+				"Photosynthesis",
+				"Respiration",
+				"Digestion",
+				"Fermentation"
+			],
+			"answer": "Photosynthesis"
+		},
+		{
+			"question": "What is the name of the force that pulls objects toward each other?",
+			"options": ["Gravity", "Magnetism", "Friction", "Electricity"],
+			"answer": "Gravity"
+		},
+		{
+			"question": "What is the metal found in the center of the earth?",
+			"options": ["Iron", "Nickel", "Copper", "Zinc"],
+			"answer": "Iron"
+		},
+		{
+			"question": "What are diamonds made of?",
+			"options": ["Carbon", "Glass", "Silver", "Platinum"],
+			"answer": "Carbon"
+		},
+		{
+			"question": "What is the name of the process by which a solid turns into a gas without passing through the liquid state?",
+			"options": [
+				"Sublimation",
+				"Evaporation",
+				"Condensation",
+				"Freezing"
+			],
+			"answer": "Sublimation"
+		},
+		{
+			"question": "What is the name of the protein that gives skin, hair, and nails their strength?",
+			"options": ["Keratin", "Collagen", "Elastin", "Myosin"],
+			"answer": "Keratin"
+		},
+		{
+			"question": "How many chemical elements are there on the periodic table?",
+			"options": ["118", "92", "104", "113"],
+			"answer": "118"
+		},
+		{
+			"question": "What is the first element on the periodic table?",
+			"options": ["Hydrogen", "Helium", "Lithium", "Oxygen"],
+			"answer": "Hydrogen"
+		},
+		{
+			"question": "What vitamin can be synthesized when exposed to sunlight?",
+			"options": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin E"],
+			"answer": "Vitamin D"
+		},
+		{
+			"question": "Every how many years does Halley's Comet pass the earth?",
+			"options": ["75", "86", "96", "106"],
+			"answer": "75"
+		},
+		{
+			"question": "What is the only even prime number?",
+			"options": ["2", "14", "6", "8"],
+			"answer": "2"
+		},
+		{
+			"question": "-3 + 10 ÷ 2",
+			"options": ["2", "1", "4", "3.5"],
+			"answer": "2"
+		},
+		{
+			"question": "What does the gallon measure?",
+			"options": ["Volume", "Weight", "Distance", "Time"],
+			"answer": "Volume"
+		},
+		{
+			"question": "What does the newton measure?",
+			"options": ["Force", "Weight", "Distance", "Time"],
+			"answer": "Force"
+		}
+	],
+	"technology": [
+		{
+			"question": "Which company developed the programming language Java?",
+			"options": ["Sun Microsystems", "Microsoft", "Apple", "IBM"],
+			"answer": "Sun Microsystems"
+		},
+		{
+			"question": "How many bits is a byte?",
+			"options": ["8", "4", "16", "32"],
+			"answer": "8"
+		},
+		{
+			"question": "How many megabytes is a gigabyte?",
+			"options": [
+				"1024",
+				"1000",
+				"100",
+				"Depends on the size of the file"
+			],
+			"answer": "1024"
+		},
+		{
+			"question": "What is the name of the open-source operating system based on the Linux kernel?",
+			"options": ["Ubuntu", "Windows", "macOS", "Android"],
+			"answer": "Ubuntu"
+		},
+		{
+			"question": "What is the name of the first computer?",
+			"options": ["ENIAC", "UNIVAC I", "Z1", "Colossus"],
+			"answer": "ENIAC"
+		},
+		{
+			"question": "What is the name of the web browser developed by Google?",
+			"options": ["Chrome", "Firefox", "Safari", "Opera"],
+			"answer": "Chrome"
+		},
+		{
+			"question": "What is the name of the programming language used to create web pages?",
+			"options": ["JavaScript", "CSS", "PhP", "Python"],
+			"answer": "JavaScript"
+		},
+		{
+			"question": "The \".WAV\" is a format of?",
+			"options": ["Audio", "Video", "Image", "Document"],
+			"answer": "Audio"
+		},
+		{
+			"question": "What is the name of the first computer virus?",
+			"options": ["Creeper", "Elk Cloner", "Rabbit", "Stoned"],
+			"answer": "Creeper"
+		},
+		{
+			"question": "How many laws of robotics (or Asimov's laws) are there?",
+			"options": ["3", "4", "2", "6"],
+			"answer": "3"
+		},
+		{
+			"question": "What is the name of the first video game console?",
+			"options": [
+				"Magnavox Odyssey",
+				"Atari 2600",
+				"Nintendo Entertainment System",
+				"Sega Genesis"
+			],
+			"answer": "Magnavox Odyssey"
+		},
+		{
+			"question": "What is the best-selling video game in history?",
+			"options": [
+				"Minecraft",
+				"Tetris",
+				"Wii Sports",
+				"Grand Theft Auto V"
+			],
+			"answer": "Minecraft"
+		},
+		{
+			"question": "What color are the pigs in the video game \"Angry Birds\"?",
+			"options": ["Green", "Red", "Yellow", "Blue"],
+			"answer": "Green"
+		},
+		{
+			"question": "Which of these is not a champion in the video game \"League of Legends\"?",
+			"options": ["Gang-il", "Ahri", "Teemo", "Ryze"],
+			"answer": "Gang-il"
+		},
+		{
+			"question": "How many points do the grapes give in the video game \"Pacman\"?",
+			"options": ["1000", "700", "100", "400"],
+			"answer": "1000"
+		},
+		{
+			"question": "What is the name of the main character in the video game \"The Legend of Zelda\"?",
+			"options": ["Link", "Zelda", "Ganon", "Ganondorf"],
+			"answer": "Link"
+		}
+	],
+	"art": [
+		{
+			"question": "Who painted the famous artwork \"The Starry Night\"?",
+			"options": [
+				"Vincent van Gogh",
+				"Leonardo da Vinci",
+				"Pablo Picasso",
+				"Michelangelo"
+			],
+			"answer": "Vincent van Gogh"
+		},
+		{
+			"question": "Which sculptor made the famous sculpture \"David?\"?",
+			"options": [
+				"Michelangelo",
+				"Donatello",
+				"Leonardo da Vinci",
+				"Raphael"
+			],
+			"answer": "Michelangelo"
+		},
+		{
+			"question": "What is the best-selling album in history?",
+			"options": [
+				"Thriller",
+				"Back in Black",
+				"The Dark Side of the Moon",
+				"Bat Out of Hell"
+			],
+			"answer": "Thriller"
+		},
+		{
+			"question": "How many strings does a guitar have?",
+			"options": ["Six", "Four", "Twelve", "Eight"],
+			"answer": "Six"
+		},
+		{
+			"question": "What is the name of the famous statue that depicts the Greek goddess of love and beauty?",
+			"options": [
+				"Venus de Milo",
+				"David",
+				"The Thinker",
+				"Laocoön and His Sons"
+			],
+			"answer": "Venus de Milo"
+		},
+		{
+			"question": "What band is the author of the song \"Believer\"?",
+			"options": [
+				"Imagine Dragons",
+				"Coldplay",
+				"Maroon 5",
+				"Linkin Park"
+			],
+			"answer": "Imagine Dragons"
+		},
+		{
+			"question": "What is the name of the famous Italian artist who painted the ceiling of the Sistine Chapel?",
+			"options": [
+				"Michelangelo",
+				"Leonardo da Vinci",
+				"Raphael",
+				"Sandro Botticelli"
+			],
+			"answer": "Michelangelo"
+		},
+		{
+			"question": "Who is Don Quixote in love with in the play \"The Ingenious Hidalgo Don Quixote of La Mancha\"?",
+			"options": ["Dulcinea", "Maritornes", "Antonia", "Fernanda"],
+			"answer": "Dulcinea"
+		},
+		{
+			"question": "What is the name of the famous ballet composed by Tchaikovsky?",
+			"options": [
+				"Swan Lake",
+				"The Nutcracker",
+				"Romeo and Juliet",
+				"The Sleeping Beauty"
+			],
+			"answer": "Swan Lake"
+		},
+		{
+			"question": "Who is the author of the famous book \"The Little Prince\"?",
+			"options": [
+				"Antoine de Saint-Exupéry",
+				"Jean-Jacques Rousseau",
+				"Voltaire",
+				"Victor Hugo"
+			],
+			"answer": "Antoine de Saint-Exupéry"
+		},
+		{
+			"question": "What architectural style is Notre Dame Cathedral?",
+			"options": ["Gothic", "Baroque", "Renaissance", "Neoclassical"],
+			"answer": "Gothic"
+		},
+		{
+			"question": "Which famous playwright wrote the play \"Hamlet\"?",
+			"options": [
+				"William Shakespeare",
+				"Tennessee Williams",
+				"Arthur Miller",
+				"Samuel Beckett"
+			],
+			"answer": "William Shakespeare"
+		},
+		{
+			"question": "Which famous novel by George Orwell tells the story of a society where government surveillance and propaganda control all aspects of people's lives?",
+			"options": [
+				"1984",
+				"Animal Farm",
+				"Brave New World",
+				"Fahrenheit 451"
+			],
+			"answer": "1984"
+		},
+		{
+			"question": "Who is the author of the 'Harry Potter' book series?",
+			"options": [
+				"J.K. Rowling",
+				"Stephen King",
+				"George R.R. Martin",
+				"Dan Brown"
+			],
+			"answer": "J.K. Rowling"
+		},
+		{
+			"question": "In music, how many lines does a staff have?",
+			"options": ["Five", "Four", "Six", "Three"],
+			"answer": "Five"
+		}
+	],
+	"space": [
+		{
+			"question": "What is the largest planet in our solar system?",
+			"options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+			"answer": "Jupiter"
+		},
+		{
+			"question": "What is the name of the brightest star in the night sky?",
+			"options": [
+				"Sirius",
+				"Proxima Centauri",
+				"Betelgeuse",
+				"Aldebaran"
+			],
+			"answer": "Sirius"
+		},
+		{
+			"question": "What is the name of the only natural satellite of Earth?",
+			"options": ["Moon", "Mars", "Venus", "Jupiter"],
+			"answer": "Moon"
+		},
+		{
+			"question": "What is the name of the first artificial satellite launched into space?",
+			"options": ["Sputnik 1", "Explorer 1", "Vanguard 1", "Vostok 1"],
+			"answer": "Sputnik 1"
+		},
+		{
+			"question": "What is the speed of light approximately?",
+			"options": [
+				"300,000 km/s",
+				"200,000 km/s",
+				"100,000 km/s",
+				"400,000 km/s"
+			],
+			"answer": "300,000 km/s"
+		},
+		{
+			"question": "What is the name of the largest known asteroid in our solar system?",
+			"options": ["Ceres", "Vesta", "Pallas", "Hygiea"],
+			"answer": "Ceres"
+		},
+		{
+			"question": "What is the name of the spacecraft that landed on Mars in 2021 as part of the Mars 2020 mission?",
+			"options": ["Perseverance", "Curiosity", "Opportunity", "Spirit"],
+			"answer": "Perseverance"
+		},
+		{
+			"question": "How long does it take for sunlight to reach the earth?",
+			"options": ["8 minutes", "3.5 hours", "26 seconds", "10 seconds"],
+			"answer": "8 minutes"
+		},
+		{
+			"question": "About how many stars are there in the solar system?",
+			"options": ["1", "100", "100,000", "Too many to count"],
+			"answer": "1"
+		},
+		{
+			"question": "What is the most common matter in the universe?",
+			"options": ["Hydrogen", "Dark matter", "Helium", "Oxygen"],
+			"answer": "Hydrogen"
+		},
+		{
+			"question": "About what temperature is it in space?",
+			"options": ["-270°C", "-120°C", "0°C", "38°C"],
+			"answer": "-270°C"
+		},
+		{
+			"question": "Mainly which atoms do stars use in their fusion process?",
+			"options": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+			"answer": "Hydrogen"
+		},
+		{
+			"question": "What is inside a black hole in the movie \"Interstellar\"?",
+			"options": [
+				"A fifth dimension",
+				"A planet",
+				"A spaceship",
+				"Nothing"
+			],
+			"answer": "A fifth dimension"
+		},
+		{
+			"question": "What is the geometric figure that describes the orbit of the planets?",
+			"options": ["Ellipse", "Circle", "Circumference", "Square"],
+			"answer": "Ellipse"
+		},
+		{
+			"question": "How many moons does Mars have?",
+			"options": ["1", "2", "4", "Does not have"],
+			"answer": "2"
+		},
+		{
+			"question": "What is the name of the first man to walk on the moon?",
+			"options": [
+				"Neil Armstrong",
+				"Buzz Aldrin",
+				"Alan Shepard",
+				"Yuri Gagarin"
+			],
+			"answer": "Neil Armstrong"
+		}
+	],
+	"general culture": [
+		{
+			"question": "What part of the ship does the nautical term \"starboard\" refer to?",
+			"options": ["Right", "Left", "Front", "Back"],
+			"answer": "Right"
+		},
+		{
+			"question": "Which river runs through London?",
+			"options": ["Thames", "Seine", "Danube", "Nile"],
+			"answer": "Thames"
+		},
+		{
+			"question": "Who turns into Hulk?",
+			"options": [
+				"Bruce Banner",
+				"Tony Stark",
+				"Peter Parker",
+				"Steve Rogers"
+			],
+			"answer": "Bruce Banner"
+		},
+		{
+			"question": "How many players does a soccer team have on the field?",
+			"options": ["11", "10", "9", "12"],
+			"answer": "11"
+		},
+		{
+			"question": "Which of these is a percussion instrument?",
+			"options": ["Drum", "Violin", "Flute", "Trumpet"],
+			"answer": "Drum"
+		},
+		{
+			"question": "What color is the \"G\" in the Google logo?",
+			"options": ["Blue", "Red", "Yellow", "Green"],
+			"answer": "Blue"
+		},
+		{
+			"question": "What holds the Oscar trophy figurine?",
+			"options": ["A sword", "A torch", "A book", "Nothing"],
+			"answer": "A sword"
+		},
+		{
+			"question": "What instrument does Sherlock Holmes play?",
+			"options": ["Violin", "Flute", "Piano", "Guitar"],
+			"answer": "Violin"
+		},
+		{
+			"question": "What is a falchion?",
+			"options": ["A sword", "A shield", "A helmet", "A spear"],
+			"answer": "A sword"
+		},
+		{
+			"question": "How many hearts does an octopus have?",
+			"options": ["3", "2", "1", "0"],
+			"answer": "3"
+		},
+		{
+			"question": "What does the Tin Woodman want in the novel \"The Wonderful Wizard of Oz\"?",
+			"options": ["A heart", "A brain", "Courage", "A home"],
+			"answer": "A heart"
+		},
+		{
+			"question": "What color is the hair of the protagonist in the anime \"Death Note\"?",
+			"options": ["Black", "Blonde", "Red", "Brown"],
+			"answer": "Brown"
+		},
+		{
+			"question": "What is the name of the holy book of Islam?",
+			"options": ["Quran", "Bible", "Torah", "Vedas"],
+			"answer": "Quran"
+		},
+		{
+			"question": "How old is a lustrum?",
+			"options": ["5 years", "10 years", "15 years", "20 years"],
+			"answer": "5 years"
+		},
+		{
+			"question": "How many sides does a hexagon have?",
+			"options": ["6", "5", "7", "8"],
+			"answer": "6"
+		}
+	]
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>QUEZEFY - Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: rgb(255, 255, 0) url('b.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 10px;
+            min-height: 100vh;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 8px 12px;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .quiz-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: clamp(15px, 4vw, 20px);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: 60px auto;
+        }
+
+        .question {
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .option {
+            padding: clamp(8px, 3vw, 10px);
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: left;
+            width: 100%;
+        }
+
+        .option:hover {
+            background-color: lightgray;
+        }
+
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .wrong {
+            background-color: red;
+            color: white;
+        }
+
+        .score-container {
+            display: none;
+            margin-top: 20px;
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+        }
+
+        .timer-circle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: clamp(40px, 12vw, 60px);
+            height: clamp(40px, 12vw, 60px);
+            border-radius: 50%;
+            background: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            font-weight: bold;
+            z-index: 100;
+        }
+
+        .score-container button {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            padding: clamp(8px, 3vw, 12px) clamp(15px, 4vw, 25px);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease-in-out;
+            margin: 8px;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: calc(50% - 16px);
+            min-width: 120px;
+        }
+
+        .score-container button:first-of-type {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        }
+
+        .score-container button:first-of-type:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 75, 43, 0.7);
+        }
+
+        .score-container button:last-of-type {
+            background: linear-gradient(45deg, #1d976c, #93f9b9);
+        }
+
+        .score-container button:last-of-type:hover {
+            background: linear-gradient(45deg, #93f9b9, #1d976c);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(29, 151, 108, 0.7);
+        }
+
+        /* Popup Modal */
+        .popup-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease-in-out;
+            z-index: 9999;
+            padding: 15px;
+        }
+
+        .popup {
+            background: white;
+            padding: clamp(20px, 5vw, 30px);
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .popup img {
+            width: clamp(60px, 20vw, 80px);
+            height: clamp(60px, 20vw, 80px);
+            margin-bottom: 10px;
+        }
+
+        .popup h2 {
+            font-size: clamp(1.5rem, 6vw, 2rem);
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .popup p {
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .popup button {
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            padding: clamp(8px, 3vw, 12px) clamp(15px, 4vw, 20px);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease-in-out;
+            margin: 8px;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: calc(50% - 16px);
+            min-width: 120px;
+        }
+
+        .popup button:first-of-type {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        }
+
+        .popup button:first-of-type:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 75, 43, 0.7);
+        }
+
+        .popup button:last-of-type {
+            background: linear-gradient(45deg, #1d976c, #93f9b9);
+        }
+
+        .popup button:last-of-type:hover {
+            background: linear-gradient(45deg, #93f9b9, #1d976c);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(29, 151, 108, 0.7);
+        }
+
+        @media (hover: none) {
+            .option:hover {
+                background-color: transparent;
+            }
+            
+            .score-container button:hover,
+            .popup button:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .quiz-container {
+                width: 95%;
+                margin: 50px auto;
+            }
+
+            .option {
+                padding: 10px 8px;
+            }
+
+            .score-container button,
+            .popup button {
+                width: 100%;
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <img src="trophy.svg" alt="Trophy">
+            <h2>CONGRATULATIONS!</h2>
+            <p>Your Score: <span id="popup-score"></span>/10</p>
+            <button onclick="window.location.href='index.html'">Go to Home</button>
+            <button onclick="retryQuiz()">Retry</button>
+        </div>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <div class="timer-circle" id="timer">15</div>
+    <div class="quiz-container">
+        <h1>Quizify</h1>
+        <div class="question" id="question">Loading...</div>
+        <div class="options" id="options"></div>
+        <div class="score-container" id="score-container">
+            <p>Your Score: <span id="score"></span>/10</p>
+            <button onclick="window.location.href='index.html'">Go to Home</button>
+            <button onclick="retryQuiz()">Retry</button>
+        </div>
+    </div>
+    <audio id="rightSound" src="right.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    <audio id="cheersSound" src="cheers.mp3"></audio>
+
+
+    <script>
+        let questions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let timer;
+        let timeLeft = 15;
+        let answered = false;
+
+        async function loadQuestions() {
+            const response = await fetch('questions.json');
+            const data = await response.json();
+            const selectedCategory = sessionStorage.getItem("selectedCategory");
+
+            if (!selectedCategory || !data[selectedCategory.toLowerCase()]) {
+                document.getElementById("question").innerText = "No category selected!";
+                return;
+            }
+
+            let allQuestions = shuffleArray(data[selectedCategory.toLowerCase()]);
+            questions = allQuestions.slice(0, 10); // Select only 10 questions
+
+            startQuiz();
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function startQuiz() {
+            if (questions.length === 0) {
+                document.getElementById("question").innerText = "No questions available!";
+                return;
+            }
+            showQuestion();
+        }
+
+        const backgroundImages = ["b.jpg", "c.jpg", "d.jpg"];
+
+        function changeBackground() {
+            const randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+            document.body.style.background = `rgb(255, 255, 0) url('${randomImage}') no-repeat center center fixed`;
+            document.body.style.backgroundSize = "100% 100%";
+        }
+
+        function showQuestion() {
+            if (currentQuestionIndex >= questions.length) {
+                endQuiz();
+                return;
+            }
+
+            changeBackground(); // Change background when a new question appears
+            answered = false;
+            const questionData = questions[currentQuestionIndex];
+            document.getElementById("question").innerText = questionData.question;
+            const optionsContainer = document.getElementById("options");
+            optionsContainer.innerHTML = "";
+
+            questionData.options.forEach(option => {
+                const button = document.createElement("button");
+                button.innerText = option;
+                button.classList.add("option");
+                button.onclick = () => checkAnswer(button, option, questionData.answer);
+                optionsContainer.appendChild(button);
+            });
+
+            resetTimer();
+        }
+
+        function checkAnswer(button, selected, correct) {
+            if (answered) return;
+            answered = true;
+
+            const options = document.querySelectorAll(".option");
+            options.forEach(btn => btn.onclick = null);
+
+            let delay = 1000; // Default delay for correct answers
+            if (selected === correct) {
+                button.classList.add("correct");
+                score++;
+                document.getElementById("rightSound").play();
+            } else {
+                button.classList.add("wrong");
+                let wrongSound = document.getElementById("wrongSound");
+                wrongSound.currentTime = 0; // Reset audio playback position
+                wrongSound.play();
+                delay = wrongSound.duration * 1000 || 1500; // Ensure delay is long enough
+            }
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                showQuestion();
+            }, delay);
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            timeLeft = 15;
+            document.getElementById("timer").innerText = timeLeft;
+
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById("timer").innerText = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    if (!answered) {
+                        answered = true;
+                        currentQuestionIndex++;
+                        showQuestion();
+                    }
+                }
+            }, 1000);
+        }
+
+        function endQuiz() {
+            document.getElementById("popup-score").innerText = score;
+            document.getElementById("popup-container").style.visibility = "visible";
+            document.getElementById("popup-container").style.opacity = "1";
+
+            // Play cheers sound
+            document.getElementById("cheersSound").play();
+        }
+
+        function retryQuiz() {
+            score = 0;
+            currentQuestionIndex = 0;
+
+            // Hide popup
+            document.getElementById("popup-container").style.visibility = "hidden";
+            document.getElementById("popup-container").style.opacity = "0";
+
+            // Restore UI Elements
+            document.getElementById("question").style.display = "block";
+            document.getElementById("options").style.display = "flex";
+            document.getElementById("timer").style.display = "flex";
+            document.getElementById("score-container").style.display = "none"; // Hide score container
+
+            // Reset Timer
+            document.getElementById("timer").innerText = "15";
+
+            loadQuestions();  // Reload questions
+        }
+
+        loadQuestions();
+    </script>
+</body>
+
+</html>
